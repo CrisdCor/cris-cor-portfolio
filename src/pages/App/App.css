@@ -1,0 +1,105 @@
+/*********************************************
+VARIABLES:
+Definición de variables de las hojas de 
+estilo
+**********************************************/
+
+:root {
+  /*********************************************
+  COLORES:
+  Definición de colores base de la página
+  **********************************************/
+  --black: #000000;
+  --white: #ffffff;
+  --dark-blue: rgb(10, 11, 35);
+  --soft-blue: #93aac2;
+  --cyan: #00ffe9;
+
+  /*********************************************
+  DEGRADADOS:
+  Definición de degradados para tarjetas y
+  elementos como los proyectos de esta sección
+  **********************************************/
+  --white-border: rgba(147, 170, 194, 0.2);
+  --hover-border: rgba(147, 170, 194, 0.5);
+
+  --dark-blue-tr: rgba(10, 11, 35, 0.9);
+}
+
+/*********************************************
+RESET:
+Reseteo del CSS para ajustar el proyecto
+a medidas relativas e implementación
+de clases definidas para elementos específicos
+**********************************************/
+
+html {
+  font-size: 62.5%;
+  font-family: "Exo 2", sans-serif;
+}
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--dark-blue);
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+}
+
+p {
+  color: var(--soft-blue);
+}
+
+h1,
+h2,
+h3 {
+  color: var(--soft-blue);
+}
+
+/*********************************************
+TEXTOS - TAMAÑO:
+Asignación predeterminada en el proyecto
+del tamaño de los textos.
+**********************************************/
+.text-m {
+  font-size: 1.6rem;
+}
+
+.text-l {
+  font-size: 1.8rem;
+}
+
+.text-lg {
+  font-size: 2.4rem;
+}
+
+.text-regular {
+  font-weight: lighter;
+}
+
+.text-bold {
+  font-weight: bolder;
+}
+
+/*********************************************
+TEXTOS - ALINEACIONES:
+Asignación predeterminada en el proyecto
+de las alineaciones
+**********************************************/
+.text-left {
+  text-align: left;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
