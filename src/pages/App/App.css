@@ -3,7 +3,6 @@ VARIABLES:
 Definición de variables de las hojas de 
 estilo
 **********************************************/
-
 :root {
   /*********************************************
   COLORES:
@@ -24,6 +23,16 @@ estilo
   --hover-border: rgba(147, 170, 194, 0.5);
 
   --dark-blue-tr: rgba(10, 11, 35, 0.9);
+
+  /*********************************************
+  MEDIDAS:
+  Definición de medidas de espaciados que se
+  agregarán por defecto al portafolio
+  **********************************************/
+  --space-s: 0.8rem;
+  --space-m: 1.2rem;
+  --space-l: 2.4rem;
+  --space-xl: 3.2rem;
 }
 
 /*********************************************
@@ -32,7 +41,6 @@ Reseteo del CSS para ajustar el proyecto
 a medidas relativas e implementación
 de clases definidas para elementos específicos
 **********************************************/
-
 html {
   font-size: 62.5%;
   font-family: "Exo 2", sans-serif;
@@ -45,6 +53,7 @@ html {
 
 body {
   background: var(--dark-blue);
+  padding: var(--space-s);
 }
 
 ul {
@@ -52,10 +61,7 @@ ul {
   list-style: none;
 }
 
-p {
-  color: var(--soft-blue);
-}
-
+p,
 h1,
 h2,
 h3 {

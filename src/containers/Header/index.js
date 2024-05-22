@@ -1,9 +1,13 @@
+import LogoHeader from "../../components/LogoHeader";
+import NavBar from "../../components/NavBar";
+
 import "./styles.css";
 
 const MyHeader = () => {
   return (
-    <header>
-      <div className="header__container"></div>
+    <header className="header__container">
+      <LogoHeader />
+      <NavBar />
     </header>
   );
 };

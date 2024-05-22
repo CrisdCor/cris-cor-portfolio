@@ -1,0 +1,6 @@
+@import url(../../pages/App/App.css);
+
+.header__logo {
+  height: 100%;
+  max-height: var(--space-xl);
+}
