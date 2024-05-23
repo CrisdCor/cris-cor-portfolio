@@ -5,7 +5,7 @@ import "./styles.css";
 
 const MyHeader = () => {
   return (
-    <header className="header__container">
+    <header className="header">
       <LogoHeader />
       <NavBar />
     </header>

@@ -1,11 +1,18 @@
 @import url(../../pages/App/App.css);
 
 .navbar {
-  /* width: 100%; */
-  /* height: 100%; */
+  width: auto;
+  height: 100%;
+  margin-right: var(--space-l);
   display: flex;
+  align-items: center;
+  column-gap: var(--space-xl);
 }
 
-.navbar li {
-  margin: 0 1rem;
+.navbar li:hover {
+  height: 100%;
+  color: var(--cyan);
+  border-bottom: 1px solid var(--cyan);
+  transition: all 500ms;
+  cursor: pointer;
 }

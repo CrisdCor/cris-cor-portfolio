@@ -3,8 +3,8 @@ import "./styles.css";
 
 const LogoHeader = () => {
   return (
-    <a href="/">
-      <img className="header__logo" src={Logo} alt="Logo CRISCOR" />;
+    <a href="/" className="header-logo">
+      <img className="header-logo__img" src={Logo} alt="Logo CRISCOR" />;
     </a>
   );
 };

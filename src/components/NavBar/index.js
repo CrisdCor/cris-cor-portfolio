@@ -1,18 +1,12 @@
+import "./styles.css";
+
 export default function NavBar() {
   return (
     <ul className="navbar">
-      <li>
-        <p>PROYECTOS</p>
-      </li>
-      <li>
-        <p>ESTUDIOS - HABILIDADES</p>
-      </li>
-      <li>
-        <p>MÁS SOBRE MI</p>
-      </li>
-      <li>
-        <p>CONTACTO</p>
-      </li>
+      <li className="text-s">Proyectos</li>
+      <li className="text-s">Habilidades</li>
+      <li className="text-s">Acerca de mi</li>
+      <li className="text-s">CONTACTO</li>
     </ul>
   );
 }

@@ -1,6 +1,6 @@
 @import url(../../pages/App/App.css);
 
-.header__container {
+.header {
   position: relative;
   width: 100%;
   max-width: 128rem;
@@ -8,10 +8,9 @@
   margin: 0 auto;
   padding: var(--space-m);
   display: flex;
-  /* justify-content: space-between; */
+  justify-content: space-between;
   align-items: center;
   border: 0.1rem solid rgba(147, 170, 194, 0.4);
-  border-radius: var(--space-m);
-  /* backdrop-filter: blur(10px); */
-  overflow: hidden;
+  border-radius: var(--space-s);
+  backdrop-filter: blur(10px);
 }

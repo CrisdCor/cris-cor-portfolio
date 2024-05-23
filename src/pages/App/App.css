@@ -64,7 +64,8 @@ ul {
 p,
 h1,
 h2,
-h3 {
+h3,
+li {
   color: var(--soft-blue);
 }
 
@@ -73,15 +74,15 @@ TEXTOS - TAMAÑO:
 Asignación predeterminada en el proyecto
 del tamaño de los textos.
 **********************************************/
-.text-m {
+.text-s {
   font-size: 1.6rem;
 }
 
-.text-l {
+.text-m {
   font-size: 1.8rem;
 }
 
-.text-lg {
+.text-l {
   font-size: 2.4rem;
 }
 
