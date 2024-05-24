@@ -19,7 +19,7 @@ estilo
   Definición de degradados para tarjetas y
   elementos como los proyectos de esta sección
   **********************************************/
-  --white-border: rgba(147, 170, 194, 0.2);
+  --white-border: rgba(147, 170, 194, 0.5);
   --hover-border: rgba(147, 170, 194, 0.5);
 
   --dark-blue-tr: rgba(10, 11, 35, 0.9);

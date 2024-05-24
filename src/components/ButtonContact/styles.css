@@ -18,10 +18,10 @@
 
 .button-contact:hover {
   background: var(--cyan);
-  transition: all 0.5s;
+  transition: all 0.3s;
 }
 
 .button-contact:hover .buttcon-contact--text {
   color: var(--dark-blue);
-  transition: all 0.5s;
+  transition: all 0.3s;
 }
