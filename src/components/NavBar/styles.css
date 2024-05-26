@@ -6,47 +6,48 @@
   display: flex;
   align-items: center;
   column-gap: var(--space-xl);
+  flex-wrap: nowrap;
 }
 
-.navbar__link {
-  width: auto;
-  height: 100%;
-  padding: 0 var(--space-m);
+.navbar-link {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  column-gap: 0.6rem;
-  text-decoration: none;
+  justify-content: center;
 }
 
-.navbar__link:hover .navbar__link--decoration {
-  background-color: var(--cyan);
-  transition: background-color 0.6s;
-}
-
-.navbar__link .span-active {
-  background-color: var(--cyan);
-  transition: background-color 0.6s;
-}
-
-.navbar__link .text-active {
-  color: var(--cyan);
-  transition: background-color 0.6s;
-}
-
-.navbar__link--decoration {
-  width: 0.6rem;
-  height: 0.6rem;
-  border-radius: 50%;
-  background-color: var(--soft-blue);
-}
-
-.navbar__link--text {
+.navbar-link__text {
   font-family: "Audiowide";
   font-weight: 400;
   font-style: normal;
+  transition: color 0.8s;
 }
 
-.navbar__link--text .active {
+.navbar-link__decoration {
+  width: 0.4rem;
+  height: 0.2rem;
+  border-radius: 0.8rem;
+  background-color: var(--cyan);
+  transform: scale(0);
+  transition: all 0.5s;
+}
+
+/* ********************************************
+Estilado de clases que crean animación de 
+interaccón para todos los links
+******************************************** */
+
+.navbar-link:hover .navbar-link__text {
   color: var(--cyan);
-  transition: background-color 0.6s;
+  transition: color 0.6s;
+}
+
+.decoration-active {
+  width: 100%;
+  transform: scale(1);
+}
+
+.text-active {
+  color: var(--cyan);
+  transition: color 0.6s;
 }

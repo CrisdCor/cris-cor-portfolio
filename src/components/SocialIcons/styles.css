@@ -1,0 +1,32 @@
+@import url(../../pages/App/App.css);
+
+.icons-list {
+  width: 100%;
+  padding: var(--space-s);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: var(--space-l);
+}
+
+.element-container {
+  width: auto;
+  height: auto;
+}
+
+.element-container__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.element-container__link:hover .social-icons {
+  fill: var(--cyan);
+  transition: fill 0.3s;
+}
+
+.social-icons {
+  width: 26px;
+  fill: var(--soft-blue);
+  transition: fill 0.5s;
+}

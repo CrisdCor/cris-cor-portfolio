@@ -8,6 +8,7 @@ export default function Home() {
         <div className="wrap-home__decorations">
           <span className="decorations decorations--one"></span>
           <span className="decorations decorations--two"></span>
+          <span className="decorations decorations--two"></span>
         </div>
         <div className="wrap-home__section section--bottom">
           <div className="section--top__text">

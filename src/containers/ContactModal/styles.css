@@ -1,0 +1,34 @@
+@import url("../../pages/App/App.css");
+
+.contact-modal-container {
+  z-index: 3;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: calc(100% - calc(var(--space-s) * 2));
+  max-width: 128rem;
+  height: calc(100% - calc(var(--space-s) * 2));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  backdrop-filter: blur(10px);
+}
+
+.contact-modal {
+  width: 100%;
+  max-width: 56rem;
+  max-height: 42rem;
+  padding: var(--space-l);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: var(--space-m);
+  background-color: var(--dark-blue-tr);
+  border-radius: var(--space-m);
+}
+
+.contact-modal__title {
+  font-family: "Audiowide";
+  font-weight: 400;
+  font-style: normal;
+}
