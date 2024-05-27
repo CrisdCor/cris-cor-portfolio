@@ -4,7 +4,7 @@ import { useState } from "react";
 import ButtonContact from "../ButtonContact";
 import "./styles.css";
 
-export default function NavBar() {
+export default function NavBar({ toggleContact, openContact }) {
   const [active, setActive] = useState(0);
 
   const handleToggle = (index) => {
@@ -54,7 +54,7 @@ export default function NavBar() {
           </NavLink>
         </li>
       ))}
-      <ButtonContact />
+      <ButtonContact toggleContact={toggleContact} openContact={openContact} />
     </ul>
   );
 }

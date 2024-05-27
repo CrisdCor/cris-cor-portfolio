@@ -1,6 +1,7 @@
 @import url(../../pages/App/App.css);
 
 .button-contact {
+  position: relative;
   height: 3.6rem;
   min-width: 14rem;
   max-width: 42rem;
@@ -9,6 +10,10 @@
   background: rgba(147, 170, 194, 0.4);
   border-radius: 0.4rem;
   transition: all 0.5s;
+}
+
+.button-contact--close {
+  transform: translateY(7.8rem);
 }
 
 .buttcon-contact--text {

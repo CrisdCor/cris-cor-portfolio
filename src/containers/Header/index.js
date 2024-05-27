@@ -3,11 +3,11 @@ import NavBar from "../../components/NavBar";
 
 import "./styles.css";
 
-const MyHeader = () => {
+const MyHeader = ({ toggleContact, openContact }) => {
   return (
     <header className="header">
       <LogoHeader />
-      <NavBar />
+      <NavBar toggleContact={toggleContact} openContact={openContact} />
     </header>
   );
 };
