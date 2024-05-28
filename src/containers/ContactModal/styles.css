@@ -14,6 +14,20 @@
   backdrop-filter: blur(10px);
 }
 
+.contact-modal-container--close {
+  visibility: hidden;
+  backdrop-filter: blur(0);
+  transition: all 1s;
+  transition-delay: visibility 0.6s;
+  /* animation: close-contact-modal 1s ease-in-out forwards; */
+}
+
+.contact-modal-container--open {
+  visibility: visible;
+  backdrop-filter: blur(10px);
+  transition: all 0.6s;
+}
+
 .contact-modal {
   width: 100%;
   max-width: 56rem;
@@ -26,6 +40,18 @@
   background-color: var(--dark-blue-tr);
   border: 0.1rem solid rgba(147, 170, 194, 0.4);
   border-radius: var(--space-m);
+}
+
+.contact-modal--close {
+  transform: scale(0) translateY(-8rem);
+  transform-origin: top right;
+  transition: transform 0.3s;
+}
+
+.contact-modal--open {
+  transform: scale(1) translateY(0);
+  transform-origin: top right;
+  transition: transform 0.6s;
 }
 
 .contact-modal__title {
