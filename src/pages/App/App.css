@@ -11,8 +11,8 @@ estilo
   --black: #000000;
   --white: #ffffff;
   --dark-blue: rgb(10, 11, 35);
-  --soft-blue: #93aac2;
-  --cyan: #00ffe9;
+  --soft-blue: rgb(147, 170, 194);
+  --cyan: rgb(0, 255, 233);
 
   /*********************************************
   DEGRADADOS:
@@ -105,6 +105,13 @@ del tamaño de los textos.
   font-size: 2.4rem;
 }
 
+.text-title {
+  font-size: 3.6rem;
+  font-family: "Audiowide";
+  font-weight: 400;
+  font-style: normal;
+}
+
 .text-regular {
   font-weight: lighter;
 }
@@ -128,4 +135,20 @@ de las alineaciones
 
 .text-right {
   text-align: right;
+}
+
+/*********************************************
+PAGES - DEFAULT:
+Asignación de estilo por defecto para todas
+las páginas.
+**********************************************/
+
+.page-container {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  width: calc(100% - 1.6rem);
+  max-width: 128rem;
+  height: calc(100dvh - 1.6rem);
+  padding-top: 12.4rem;
 }

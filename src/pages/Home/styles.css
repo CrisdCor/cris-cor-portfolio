@@ -1,18 +1,5 @@
 @import url(../App/App.css);
 
-.home-container {
-  position: relative;
-  overflow: hidden;
-  left: 50%;
-  transform: translateX(-50%);
-  width: calc(100% - 1.6rem);
-  max-width: 128rem;
-  height: calc(100dvh - 1.6rem);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 .home-container__wrap-home {
   position: relative;
   width: 100%;

@@ -1,0 +1,20 @@
+@import url(../App/App.css);
+
+.skills-container {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xl);
+}
+
+.skills-wrap {
+  width: 100%;
+  display: flex;
+}
+
+.skills-section {
+  width: 100%;
+}
+
+.skills-section--left {
+  border-right: 0.1rem solid var(--white-border);
+}

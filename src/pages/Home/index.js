@@ -3,7 +3,7 @@ import "./styles.css";
 
 export default function Home() {
   return (
-    <main className="home-container">
+    <main className="home-container page-container">
       <section className="home-container__wrap-home">
         <div className="wrap-home__decorations">
           <span className="decorations decorations--one"></span>

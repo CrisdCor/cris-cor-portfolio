@@ -1,7 +1,10 @@
+import { useState } from "react";
+
 import SocialIcons from "../../components/SocialIcons";
 import "./styles.css";
 
 export default function ContactModal({ toggleContact, openContact }) {
+  const [buttonText, setButtonText] = useState("Copiar correo");
   /**
    * ******************************************************************
    * Apertura y cierre del modal
@@ -20,14 +23,26 @@ export default function ContactModal({ toggleContact, openContact }) {
 
   /**
    * ******************************************************************
-   * Captura del correo electrónico
+   * Captura del correo electrónico en el portapapeles con la API
+   * navigator.clipboard.writeText
    * ******************************************************************
    */
 
-  const elementEmail = () => {
-    let email = document.getElementsByClassName("contact-modal__email");
-    let emailText = email[0].textContent;
-    console.log(emailText);
+  const copyEmail = () => {
+    const emailElement = document.getElementsByClassName(
+      "contact-modal__email"
+    )[0].textContent;
+
+    navigator.clipboard
+      .writeText(emailElement)
+      .then(() => {
+        setButtonText("¡Copiado!");
+        setTimeout(() => setButtonText("Copiar correo"), 1500);
+      })
+      .catch((error) => {
+        console.log("No se copió correctamente el correo", error);
+        alert("Error al copiar el correo" + error);
+      });
   };
 
   return (
@@ -42,10 +57,10 @@ export default function ContactModal({ toggleContact, openContact }) {
         </p>
         <div className="button-email-container">
           <button
-            onClick={elementEmail}
+            onClick={copyEmail}
             className="button-email__button text-m text-center"
           >
-            Copiar email
+            {buttonText}
           </button>
         </div>
         <p className="contact-modal__text text-m text-center">
