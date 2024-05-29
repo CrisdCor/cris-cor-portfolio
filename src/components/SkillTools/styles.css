@@ -1,0 +1,50 @@
+@import url(../../pages/App/App.css);
+
+.skills-tools {
+  padding: var(--space-m);
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-m);
+}
+
+.tools__shadow {
+  position: absolute;
+  width: var(--space-xxl);
+  height: 100%;
+}
+
+.tools__shadow--left {
+  top: 0;
+  left: 0;
+}
+
+.tools__shadow--right {
+  top: 0;
+  right: 0;
+}
+
+.tools__element {
+  flex: 1 1 16rem;
+  padding: var(--space-m);
+  display: flex;
+  align-items: center;
+  gap: var(--space-s);
+  border: 0.1rem solid var(--white-border);
+  border-radius: var(--space-m);
+  user-select: none;
+}
+
+.tools__element:hover {
+  box-shadow: 0 0 0.8rem 0.2rem var(--hover-border);
+  transition: box-shadow 0.3s;
+}
+
+.tools__element-icon {
+  height: 3.2rem;
+}
+
+.tools__element-text {
+  width: 100%;
+}

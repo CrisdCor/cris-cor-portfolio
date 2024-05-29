@@ -1,0 +1,36 @@
+@import url(../../pages/App/App.css);
+
+.skills-studies {
+  width: 100%;
+  padding: var(--space-l);
+  flex: 1 1 30rem;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xxl);
+  border-right: 0.1rem solid var(--white-border);
+}
+
+.studies-section {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-m);
+}
+
+.studies-section__subtitle {
+  text-transform: uppercase;
+}
+
+.studies-section__article {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: var(--space-l);
+}
+
+.studies-section__article div :nth-child(2) {
+  color: var(--white);
+}
+
+.studies-section__article h2 {
+  color: var(--cyan);
+}
