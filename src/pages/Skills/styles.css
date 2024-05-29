@@ -9,12 +9,29 @@
 .skills-wrap {
   width: 100%;
   display: flex;
+  justify-content: space-between;
+  gap: var(--space-m);
 }
 
 .skills-section {
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-l);
 }
 
-.skills-section--left {
+.section__left {
+  padding: var(--space-xl);
   border-right: 0.1rem solid var(--white-border);
+}
+
+.skill-element {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: var(--space-l);
+}
+
+.skill-element__subtitle {
+  color: var(--cyan);
 }
