@@ -1,7 +1,6 @@
 @import url(../../pages/App/App.css);
 
 .card-project {
-  /* height: 32rem; */
   padding: 0.1rem;
   display: flex;
   align-items: center;

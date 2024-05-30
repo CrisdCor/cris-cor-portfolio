@@ -1,1 +1,54 @@
 @import url(../App/App.css);
+
+.about-me__image {
+  position: fixed;
+  top: 16rem;
+  left: 6.2rem;
+  width: 100%;
+}
+
+.about-me__image img {
+  height: 62rem;
+}
+
+/* .background-decoration {
+  position: absolute;
+  top: 7rem;
+  left: 0;
+  width: 26rem;
+  height: 26rem;
+  background: rgba(147, 170, 194, 0.4);
+  filter: blur(100px);
+} */
+
+.about-me-section {
+  position: relative;
+  width: 100%;
+  padding: var(--space-xl) var(--space-s);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xl);
+}
+
+.about-me__article {
+  max-width: 82rem;
+  padding: var(--space-xl) var(--space-xl);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-m);
+  flex: 1 1;
+  backdrop-filter: blur(10px);
+  border: 0.1rem solid var(--white-border);
+  border-radius: var(--space-m);
+}
+
+.article-personal {
+  z-index: 3;
+  align-self: flex-end;
+}
+
+.article-hobbies {
+  z-index: 1;
+  max-width: 92rem;
+  transform: translateY(-8.2rem);
+}
