@@ -2,12 +2,12 @@
 
 .contact-modal-container {
   z-index: 3;
-  position: absolute;
+  position: fixed;
   left: 50%;
   transform: translateX(-50%);
   width: calc(100% - calc(var(--space-s) * 2));
   max-width: 128rem;
-  height: calc(100% - calc(var(--space-s) * 2));
+  height: calc(100% - calc(var(--space-s)));
   padding: 7rem 0;
   display: flex;
   justify-content: flex-end;
@@ -28,6 +28,7 @@
 }
 
 .contact-modal {
+  /* position: fixed; */
   width: 100%;
   max-width: 56rem;
   max-height: 42rem;

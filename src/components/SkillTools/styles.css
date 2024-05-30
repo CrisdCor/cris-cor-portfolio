@@ -26,6 +26,7 @@
 }
 
 .tools__element {
+  /* max-width: 32rem; */
   flex: 1 1 16rem;
   padding: var(--space-m);
   display: flex;
@@ -34,6 +35,7 @@
   border: 0.1rem solid var(--white-border);
   border-radius: var(--space-m);
   user-select: none;
+  transition: box-shadow 1s;
 }
 
 .tools__element:hover {
@@ -47,4 +49,22 @@
 
 .tools__element-text {
   width: 100%;
+}
+
+.tools__element--animation {
+  box-shadow: 0 0 0.8rem 0.2rem var(--hover-border);
+  transition: box-shadow 0.6s;
+  animation: animation-tools 0.6s both;
+}
+
+@keyframes animation-tools {
+  0%,
+  50%,
+  100% {
+    opacity: 1;
+  }
+  25%,
+  75% {
+    opacity: 0.6;
+  }
 }

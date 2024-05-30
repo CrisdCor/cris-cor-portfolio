@@ -24,7 +24,7 @@ export default function Projects() {
       year: "2021",
     },
     {
-      name: "Todo List",
+      name: "Box Aplication",
       desc: "Esto es una prueba de una breve descripción del proyecto que estoy plantenado",
       github: "https://github.com/CrisdCor/curso-react-intro",
       url: "https://github.com/CrisdCor/shooter-panda-game",
@@ -32,14 +32,20 @@ export default function Projects() {
       year: "2021",
     },
     {
-      name: "Todo List",
+      name: "App Boton",
       desc: "Esto es una prueba de una breve descripción del proyecto que estoy plantenado",
       github: "https://github.com/CrisdCor/curso-react-intro",
       url: "https://github.com/CrisdCor/shooter-panda-game",
       image: ImageEjemplo3,
-      year: "2021",
+      year: "2024",
     },
   ];
+
+  listProjects.sort((a, b) => {
+    if (a.year > b.year) return -1;
+    if (a.year > b.year) return 1;
+    return 0;
+  });
 
   return (
     <main className="page-container">

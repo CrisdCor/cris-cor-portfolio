@@ -1,3 +1,5 @@
+import { useState, useEffect } from "react";
+
 import IconHtml from "../../assets/icons/html.svg";
 import IconCss from "../../assets/icons/css.svg";
 import IconJavaScript from "../../assets/icons/javascript.svg";
@@ -10,6 +12,9 @@ import IconExcel from "../../assets/icons/excel.svg";
 import "./styles.css";
 
 export default function SkillTools() {
+  const [randomIndex, setRandomIndex] = useState(null);
+
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   const skillsList = [
     { name: "HTML", icon: IconHtml },
     { name: "CSS", icon: IconCss },
@@ -21,22 +26,31 @@ export default function SkillTools() {
     { name: "Excel", icon: IconExcel },
   ];
 
-  const indices = skillsList.map((el, index) => {
-    return index;
-  });
-
   function getRandomIndex(arr) {
     let randomIndex = Math.floor(Math.random() * arr.length);
     return arr[randomIndex];
   }
 
-  console.log(getRandomIndex(indices));
+  useEffect(() => {
+    const indices = skillsList.map((_, index) => index);
+    const interval = setInterval(() => {
+      setRandomIndex(getRandomIndex(indices));
+    }, 2000);
+
+    return () => clearInterval(interval);
+  }, [skillsList]);
 
   return (
     <section className="skills-tools">
       <div className="tools__shadow tools__shadow--left"></div>
-      {skillsList.map((el) => (
-        <div className="tools__element">
+
+      {skillsList.map((el, index) => (
+        <div
+          key={index}
+          className={`tools__element ${
+            randomIndex === index ? "tools__element--animation" : ""
+          }`}
+        >
           <img className="tools__element-icon" src={el.icon} alt={el.name} />
           <p className="tools__element-text text-l text-center">{el.name}</p>
         </div>

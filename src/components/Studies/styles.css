@@ -13,7 +13,7 @@
 .studies-section {
   display: flex;
   flex-direction: column;
-  gap: var(--space-m);
+  gap: var(--space-l);
 }
 
 .studies-section__subtitle {
