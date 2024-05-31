@@ -11,7 +11,6 @@ export default function CardProject({ listProjects }) {
             <picture className="card-project__image">
               <img src={project.image} alt={project.name} />
             </picture>
-
             <div className="card-project__text">
               <p className="text-l text-bold">{project.name}</p>
               <p className="text-s">{project.desc}</p>

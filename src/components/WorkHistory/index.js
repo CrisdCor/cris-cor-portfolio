@@ -5,20 +5,26 @@ export default function WorkHistory() {
     {
       name: "Proyecto: integración de pagos",
       company: "Institución Universitaria Pascual Bravo",
-      desc: "Se lideró el proyecto de integración entre bancos, una aplicación web institucional llamada SICAU y el ERP financiero a través de WS que permitió a la entidad la actualización de información de facturación y pagos en tiempo real, mejorando los procesos de facturación electrónica.",
+      desc: "Durante mi carrera, he liderado proyectos clave que han tenido un impacto significativo en la eficiencia y efectividad de las operaciones institucionales. Uno de los proyectos destacados fue la integración entre los bancos, la aplicación web institucional SICAU y el ERP financiero mediante servicios web (WS). Este proyecto permitió a la entidad actualizar la información de facturación y pagos en tiempo real, lo que mejoró notablemente los procesos de facturación electrónica y optimizó la gestión financiera en su totalidad.",
       year: "2024",
     },
 
     {
       name: "Proyecto: implementación de ERP",
       company: "Institución Universitaria Pascual Bravo",
-      desc: "Se participó como usuario líder en la parametrización e implementación de un nuevo ERP que transversarlizó los procesos administrativos, contables y financieros de la institución.",
+      desc: "Participé como usuario líder en la parametrización e implementación de un nuevo ERP, el cual transversalizó los procesos administrativos, contables y financieros de la institución. Esta iniciativa permitió una integración más eficiente de las funciones internas y mejoró la precisión y velocidad en la gestión de datos.",
       year: "2018",
     },
     {
       name: "Proyecto: Análisis de beneficiarios",
       company: "Institución Universitaria Pascual Bravo",
-      desc: "En vista de las dificultades que se presentaron en el proceso de asignación de benenficios para la comunidad estudiantil, se implementó a través de una modelación de datos con Power BI, que permitiría identificar de la comunidad los estudiantes que podrían acceder a los beneficios conocidos como Matrícula Cero y Política de Gratuidad.",
+      desc: "Para abordar las dificultades en el proceso de asignación de beneficios para la comunidad estudiantil, implementé una solución mediante la modelación de datos con Power BI. Esta herramienta permitió identificar de manera precisa a los estudiantes elegibles para los beneficios de Matrícula Cero y Política de Gratuidad, optimizando así la distribución de recursos y mejorando la equidad en el acceso a la educación.",
+      year: "2023",
+    },
+    {
+      name: "Proyecto: Reporte cierre de matrículas",
+      company: "Institución Universitaria Pascual Bravo",
+      desc: "Se implementó un reporte en Power BI con el cual se resumen a través de diferentes visualizaciones el resultado del cierre de matrículas por periodo, incluyendo cantidad de estudianes y valor de ingresos por niveles de formación.",
       year: "2023",
     },
   ];
