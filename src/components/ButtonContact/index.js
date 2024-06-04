@@ -1,15 +1,15 @@
 import "./styles.css";
 
 export default function Button({ toggleContact, openContact }) {
-  const textButton = openContact === false ? "Contacto" : "Cerrar";
-  const buttonClose =
+  const textButton = openContact === false ? "Contacto" : "X";
+  const handleButton =
     openContact === false
-      ? "button-contact text-m"
-      : "button-contact text-m button-contact--close";
+      ? "button-contact--text text-m"
+      : "button-contact--text text-m button-contact--close";
 
   return (
-    <div className={buttonClose}>
-      <button onClick={toggleContact} className="buttcon-contact--text text-m">
+    <div className="button-contact">
+      <button onClick={toggleContact} className={handleButton}>
         {textButton}
       </button>
     </div>

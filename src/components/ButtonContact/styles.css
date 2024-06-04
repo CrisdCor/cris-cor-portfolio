@@ -2,31 +2,35 @@
 
 .button-contact {
   position: relative;
-  height: 3.6rem;
-  min-width: 14rem;
-  max-width: 42rem;
+  height: 100%;
+  min-width: 12rem;
   display: flex;
   align-items: center;
+  justify-content: flex-end;
+  border-radius: 0.4rem;
+}
+
+.button-contact button {
+  width: auto;
+  min-width: 4.2rem;
+  padding: 0 var(--space-m);
   background: rgba(147, 170, 194, 0.4);
   border-radius: 0.4rem;
   transition: all 0.8s;
+  color: var(--cyan);
+  transition: all 0.5s;
 }
 
 .button-contact--close {
   transform: translateY(7.8rem);
 }
 
-.buttcon-contact--text {
-  color: var(--cyan);
-  transition: all 0.5s;
-}
+/* ********************************************
+Estilos del hover
+******************************************** */
 
-.button-contact:hover {
+.button-contact:hover button {
   background: var(--cyan);
-  transition: all 0.3s;
-}
-
-.button-contact:hover .buttcon-contact--text {
   color: var(--dark-blue);
   transition: all 0.3s;
 }

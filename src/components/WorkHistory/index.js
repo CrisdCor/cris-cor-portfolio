@@ -34,8 +34,8 @@ export default function WorkHistory() {
       <h2 className="work-section__subtitle text-l text-left">
         Reconocimientos - Trayectoria laboral
       </h2>
-      {workList.map((el, index) => (
-        <article className="work-section">
+      {workList.map((el) => (
+        <article key={el.index} className="work-section">
           <p className="work-element__name text-m text-left text-bold">
             {`${el.year} - ${el.name} `}
           </p>

@@ -6,7 +6,7 @@ export default function CardProject({ listProjects }) {
   return (
     <>
       {listProjects.map((project, index) => (
-        <article key={index} className="card-project">
+        <article key={listProjects.name} className="card-project">
           <div className="card-project--mask">
             <picture className="card-project__image">
               <img src={project.image} alt={project.name} />

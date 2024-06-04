@@ -1,60 +1,63 @@
-import { NavLink } from "react-router-dom";
-import { useState } from "react";
+import { NavLink, useLocation } from "react-router-dom";
+import { useEffect, useState } from "react";
 
-import ButtonContact from "../ButtonContact";
 import "./styles.css";
 
-export default function NavBar({ toggleContact, openContact }) {
-  const [active, setActive] = useState(0);
+export default function NavBar() {
+  const [active, setActive] = useState("/");
+  const location = useLocation();
 
-  const handleToggle = (index) => {
-    setActive(index);
+  useEffect(() => {
+    setActive(location.pathname);
+  }, [location.pathname]);
+
+  const handleToggle = (path) => {
+    setActive(path);
   };
 
   const navElements = [
     {
       name: "Inicio",
-      link: "/",
+      path: "/",
     },
     {
       name: "Proyectos",
-      link: "/projects",
+      path: "/projects",
     },
     {
       name: "Habilidades",
-      link: "/skills",
+      path: "/skills",
     },
     {
       name: "Acerca de mi",
-      link: "/aboutme",
+      path: "/aboutme",
     },
   ];
 
   return (
     <ul className="navbar">
-      {navElements.map((li, index) => (
-        <li key={index} onClick={() => handleToggle(index)}>
-          <NavLink className="navbar-link" to={li.link}>
+      {navElements.map((li) => (
+        <li key={li.path} onClick={() => handleToggle(li.path)}>
+          <NavLink className="navbar-link" to={li.path}>
             <p
               className={
-                active === index
-                  ? "text-m navbar-link__text text-active"
-                  : "text-m navbar-link__text"
+                active !== li.path
+                  ? "text-m navbar-link__text"
+                  : "text-m navbar-link__text text-active"
               }
             >
               {li.name}
             </p>
             <span
               className={
-                active === index
-                  ? "navbar-link__decoration decoration-active"
-                  : "navbar-link__decoration"
+                active !== li.path
+                  ? "navbar-link__decoration"
+                  : "navbar-link__decoration decoration-active"
               }
             ></span>
           </NavLink>
         </li>
       ))}
-      <ButtonContact toggleContact={toggleContact} openContact={openContact} />
     </ul>
   );
 }

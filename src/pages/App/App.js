@@ -2,8 +2,9 @@ import { BrowserRouter } from "react-router-dom";
 import { useState } from "react";
 
 import MyHeader from "../../containers/Header";
+import NavbarMobile from "../../components/NavbarMobile";
 import ContactModal from "../../containers/ContactModal";
-import AppRoutes from "../../containers/AppRoutes";
+import AppRoutes from "../../hooks/AppRoutes";
 
 import "./App.css";
 
@@ -17,6 +18,7 @@ function App() {
     <div className="App">
       <BrowserRouter>
         <MyHeader toggleContact={toggleContact} openContact={openContact} />
+        <NavbarMobile />
         {/* {openContact && <ContactModal />} */}
         <ContactModal toggleContact={toggleContact} openContact={openContact} />
         <AppRoutes />

@@ -46,7 +46,7 @@ export default function SkillTools() {
 
       {skillsList.map((el, index) => (
         <div
-          key={index}
+          key={el.index}
           className={`tools__element ${
             randomIndex === index ? "tools__element--animation" : ""
           }`}

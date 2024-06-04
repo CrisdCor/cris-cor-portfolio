@@ -62,7 +62,7 @@ export default function Studies() {
         {listStudies
           .filter((el) => el.type === "Superior")
           .map((el) => (
-            <article className="studies-section__article">
+            <article key={el.index} className="studies-section__article">
               <div>
                 <p className="text-m text-right">{el.title}</p>
                 <p className="text-s text-right">{el.institute}</p>
@@ -78,7 +78,7 @@ export default function Studies() {
         {listStudies
           .filter((el) => el.type === "Educo")
           .map((el) => (
-            <article className="studies-section__article">
+            <article key={el.index} className="studies-section__article">
               <div>
                 <p className="text-m text-right">{el.title}</p>
                 <p className="text-s text-right">{el.institute}</p>

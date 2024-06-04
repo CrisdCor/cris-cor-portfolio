@@ -8,11 +8,11 @@ export default function Skills() {
     <main className="page-container">
       <section className="skills-container">
         <h1 className="text-title text-center">ESTUDIOS Y HABILIDADES</h1>
+        <SkillTools />
         <div className="skills-wrap">
           <Studies />
           <WorkHistory />
         </div>
-        <SkillTools />
       </section>
     </main>
   );

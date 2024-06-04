@@ -1,13 +1,20 @@
+import "./styles.css";
+
 import LogoHeader from "../../components/LogoHeader";
 import NavBar from "../../components/NavBar";
-
-import "./styles.css";
+import ButtonContact from "../../components/ButtonContact";
 
 const MyHeader = ({ toggleContact, openContact }) => {
   return (
     <header className="header">
       <LogoHeader />
-      <NavBar toggleContact={toggleContact} openContact={openContact} />
+      <div className="header__nav">
+        <NavBar />
+        <ButtonContact
+          toggleContact={toggleContact}
+          openContact={openContact}
+        />
+      </div>
     </header>
   );
 };

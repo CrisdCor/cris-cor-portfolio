@@ -14,6 +14,25 @@ export default function Projects() {
       url: "https://github.com/CrisdCor/shooter-panda-game",
       image: ImageEjemplo1,
       year: "2023",
+      type: "A",
+    },
+    {
+      name: "Panda Shooter",
+      desc: "Esto es una prueba de una breve descripción del proyecto que estoy plantenado",
+      github: "https://github.com/CrisdCor/shooter-panda-game",
+      url: "https://github.com/CrisdCor/shooter-panda-game",
+      image: ImageEjemplo1,
+      year: "2023",
+      type: "W",
+    },
+    {
+      name: "Panda Shooter",
+      desc: "Esto es una prueba de una breve descripción del proyecto que estoy plantenado",
+      github: "https://github.com/CrisdCor/shooter-panda-game",
+      url: "https://github.com/CrisdCor/shooter-panda-game",
+      image: ImageEjemplo1,
+      year: "2023",
+      type: "W",
     },
     {
       name: "Todo List",
@@ -22,6 +41,7 @@ export default function Projects() {
       url: "https://github.com/CrisdCor/shooter-panda-game",
       image: ImageEjemplo2,
       year: "2021",
+      type: "A",
     },
     {
       name: "Box Aplication",
@@ -30,6 +50,16 @@ export default function Projects() {
       url: "https://github.com/CrisdCor/shooter-panda-game",
       image: ImageEjemplo4,
       year: "2021",
+      type: "W",
+    },
+    {
+      name: "Box Aplication",
+      desc: "Esto es una prueba de una breve descripción del proyecto que estoy plantenado",
+      github: "https://github.com/CrisdCor/curso-react-intro",
+      url: "https://github.com/CrisdCor/shooter-panda-game",
+      image: ImageEjemplo4,
+      year: "2021",
+      type: "A",
     },
     {
       name: "App Boton",
@@ -38,6 +68,7 @@ export default function Projects() {
       url: "https://github.com/CrisdCor/shooter-panda-game",
       image: ImageEjemplo3,
       year: "2024",
+      type: "W",
     },
   ];
 
@@ -52,7 +83,20 @@ export default function Projects() {
       <section className="projects-container">
         <h1 className="projects-grid__title text-title">PROYECTOS</h1>
         <div className="projects-grid-container">
-          <CardProject listProjects={listProjects} />
+          <CardProject
+            listProjects={listProjects.filter(
+              (project) => project.type === "W"
+            )}
+          />
+        </div>
+        <span className="projects__division"></span>
+        <h2 className="projects__subtitle text-l">Proyectos académicos</h2>
+        <div className="projects-grid-container">
+          <CardProject
+            listProjects={listProjects.filter(
+              (project) => project.type === "A"
+            )}
+          />
         </div>
       </section>
     </main>
