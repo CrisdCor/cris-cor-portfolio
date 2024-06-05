@@ -1,72 +1,45 @@
-import ImageEjemplo1 from "../../assets/images/ejemplo-2.jpg";
-import ImageEjemplo2 from "../../assets/images/ejemplo-3.jpg";
-import ImageEjemplo3 from "../../assets/images/ejemplo-4.jpg";
-import ImageEjemplo4 from "../../assets/images/ejemplo-5.jpg";
+import RickMortyApiImg from "../../assets/images/image-rick-&-morty-api.png";
+import PandaShootImg from "../../assets/images/image-panda-shoot.png";
+import ImageEjemplo1 from "../../assets/images/ejemplo-1.jpg";
+import ImageEjemplo2 from "../../assets/images/ejemplo-2.jpg";
 import CardProject from "../../components/CardProject";
 import "./styles.css";
 
 export default function Projects() {
   const listProjects = [
     {
-      name: "Panda Shooter",
-      desc: "Esto es una prueba de una breve descripción del proyecto que estoy plantenado",
+      name: "Rick & Morty - API",
+      desc: "Este es un proyecto netamente académico que se desarrolló a lo largo de un curso impartido por el profesor Rafa Tárrega en Udemy. Este, fue gratuito e introductorio previo al inicio de un curso de NEXT JS - Curso de 0 a Experto",
+      github: "https://github.com/CrisdCor/curso-react-rick-morty",
+      url: "https://curso-react-rick-morty.vercel.app/",
+      image: RickMortyApiImg,
+      year: "2024",
+      type: "A",
+    },
+    {
+      name: "Panda Shoot",
+      desc: "Este es un proyecto académico que se desarrolló a lo largo de un curso impartido por la profesora Tefa Code en Platzi. En este curso se adquirieron conocimientos de animación con CSS.",
       github: "https://github.com/CrisdCor/shooter-panda-game",
-      url: "https://github.com/CrisdCor/shooter-panda-game",
-      image: ImageEjemplo1,
+      url: "https://shooter-panda-game.vercel.app/",
+      image: PandaShootImg,
       year: "2023",
       type: "A",
     },
     {
-      name: "Panda Shooter",
-      desc: "Esto es una prueba de una breve descripción del proyecto que estoy plantenado",
-      github: "https://github.com/CrisdCor/shooter-panda-game",
-      url: "https://github.com/CrisdCor/shooter-panda-game",
+      name: "Metcon Trainning",
+      desc: "Aplicación en construcción...",
+      github: "/projects",
+      url: "/projects",
       image: ImageEjemplo1,
-      year: "2023",
+      year: "2024",
       type: "W",
     },
     {
-      name: "Panda Shooter",
-      desc: "Esto es una prueba de una breve descripción del proyecto que estoy plantenado",
-      github: "https://github.com/CrisdCor/shooter-panda-game",
-      url: "https://github.com/CrisdCor/shooter-panda-game",
-      image: ImageEjemplo1,
-      year: "2023",
-      type: "W",
-    },
-    {
-      name: "Todo List",
-      desc: "Esto es una prueba de una breve descripción del proyecto que estoy plantenado ",
-      github: "https://github.com/CrisdCor/curso-react-intro",
-      url: "https://github.com/CrisdCor/shooter-panda-game",
+      name: "Box App",
+      desc: "Aplicación en construcción...",
+      github: "/projects",
+      url: "/projects",
       image: ImageEjemplo2,
-      year: "2021",
-      type: "A",
-    },
-    {
-      name: "Box Aplication",
-      desc: "Esto es una prueba de una breve descripción del proyecto que estoy plantenado",
-      github: "https://github.com/CrisdCor/curso-react-intro",
-      url: "https://github.com/CrisdCor/shooter-panda-game",
-      image: ImageEjemplo4,
-      year: "2021",
-      type: "W",
-    },
-    {
-      name: "Box Aplication",
-      desc: "Esto es una prueba de una breve descripción del proyecto que estoy plantenado",
-      github: "https://github.com/CrisdCor/curso-react-intro",
-      url: "https://github.com/CrisdCor/shooter-panda-game",
-      image: ImageEjemplo4,
-      year: "2021",
-      type: "A",
-    },
-    {
-      name: "App Boton",
-      desc: "Esto es una prueba de una breve descripción del proyecto que estoy plantenado",
-      github: "https://github.com/CrisdCor/curso-react-intro",
-      url: "https://github.com/CrisdCor/shooter-panda-game",
-      image: ImageEjemplo3,
       year: "2024",
       type: "W",
     },

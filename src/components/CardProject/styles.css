@@ -1,6 +1,7 @@
 @import url(../../pages/App/App.css);
 
 .card-project {
+  max-width: 58rem;
   padding: 0.1rem;
   display: flex;
   align-items: center;
@@ -14,6 +15,7 @@
 }
 
 .card-project--mask {
+  /* max-width: 58rem; */
   width: 100%;
   height: 100%;
   padding: var(--space-m);

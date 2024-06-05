@@ -150,8 +150,7 @@ las páginas.
   transform: translateX(-50%);
   width: calc(100% - 1.6rem);
   max-width: 128rem;
-  height: calc(100dvh - 1.6rem);
-  padding-top: 12.4rem;
+  padding: 12.4rem 0;
   opacity: 0;
   animation: animation-open-page 0.8s both;
 }
