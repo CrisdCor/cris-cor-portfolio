@@ -4,7 +4,9 @@ import SocialIcons from "../../components/SocialIcons";
 import "./styles.css";
 
 export default function ContactModal({ toggleContact, openContact }) {
-  const [buttonText, setButtonText] = useState("Copiar correo");
+  const [buttonText, setButtonText] = useState(
+    "cristiandavid.corrales@gmail.com"
+  );
   /**
    * ******************************************************************
    * Apertura y cierre del modal
@@ -30,14 +32,17 @@ export default function ContactModal({ toggleContact, openContact }) {
 
   const copyEmail = () => {
     const emailElement = document.getElementsByClassName(
-      "contact-modal__email"
+      "button-email__button"
     )[0].textContent;
 
     navigator.clipboard
       .writeText(emailElement)
       .then(() => {
         setButtonText("¡Copiado!");
-        setTimeout(() => setButtonText("Copiar correo"), 1500);
+        setTimeout(
+          () => setButtonText("cristiandavid.corrales@gmail.com"),
+          1500
+        );
       })
       .catch((error) => {
         console.log("No se copió correctamente el correo", error);
@@ -52,9 +57,9 @@ export default function ContactModal({ toggleContact, openContact }) {
         <p className="contact-modal__text text-m text-center">
           ¡No dudes en escribir! A mi correo electrónico.
         </p>
-        <p className="contact-modal__email text-m">
+        {/* <p className="contact-modal__email text-m">
           cristiandavid.corrales@gmail.com
-        </p>
+        </p> */}
         <div className="button-email-container">
           <button
             onClick={copyEmail}
