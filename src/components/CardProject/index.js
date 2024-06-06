@@ -1,5 +1,5 @@
 import Github from "../../assets/icons/github.svg";
-import Link from "../../assets/icons/link.svg";
+import Link from "../../assets/icons/link-2.svg";
 import "./styles.css";
 
 export default function CardProject({ listProjects }) {
@@ -23,7 +23,12 @@ export default function CardProject({ listProjects }) {
                 <a href={project.github} target="_blank" rel="noreferrer">
                   <img src={Github} alt="Github" />
                 </a>
-                <a href={project.url} target="_blank" rel="noreferrer">
+                <a
+                  className="footer-links__text"
+                  href={project.url}
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   <img src={Link} alt="Enlace" />
                 </a>
               </div>

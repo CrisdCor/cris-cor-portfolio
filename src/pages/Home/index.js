@@ -12,7 +12,7 @@ export default function Home() {
         </div>
         <div className="wrap-home__section section--bottom">
           <div className="section--top__text">
-            <p>Profesional en marketing, Proyectos &</p>
+            <p>Marketing, Formulación y Evaluación de Proyectos &</p>
             <p>Desarrollador Web</p>
           </div>
         </div>

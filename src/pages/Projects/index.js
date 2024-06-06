@@ -1,7 +1,8 @@
 import RickMortyApiImg from "../../assets/images/image-rick-&-morty-api.png";
 import PandaShootImg from "../../assets/images/image-panda-shoot.png";
-import ImageEjemplo1 from "../../assets/images/ejemplo-1.jpg";
-import ImageEjemplo2 from "../../assets/images/ejemplo-2.jpg";
+import ReporteCierreIupbImg from "../../assets/images/image-cierre-iupb.png";
+import ImageEjemplo2 from "../../assets/images/ejemplo-1.jpg";
+import BeneficiosIupbImg from "../../assets/images/image-beneficios-iupb.png";
 import CardProject from "../../components/CardProject";
 import "./styles.css";
 
@@ -26,11 +27,20 @@ export default function Projects() {
       type: "A",
     },
     {
-      name: "Metcon Trainning",
-      desc: "Aplicación en construcción...",
+      name: "Informe Matrículas Institución Educativa",
+      desc: "Este proyecto fue realizado con la finalidad  de condensar la información que se extrae del proceso de matrículas de una institución de educación superior. Es un proyecto de utilidad real, pero que para el caso expuesto los datos personales fueron modificado a fin de proteger su privacidad. Para la construcción del proyecto se usó Figma en la creación de los backgorund y la visualización y modelado de datos con Power BI.",
+      // github: "",
+      url: "https://app.powerbi.com/view?r=eyJrIjoiMWJhOTM2NTUtYTU0Ni00OGFmLWFmMTktODYyNjgxZWE2NWM3IiwidCI6ImIxNTk2YThmLWMxNzYtNGNlZS1hN2ZhLTNjMTk1YjY0MTA1MSIsImMiOjR9",
+      image: ReporteCierreIupbImg,
+      year: "2024",
+      type: "W",
+    },
+    {
+      name: "Listado Aprobados Beneficios",
+      desc: "Este proyecto solucionó de manera eficaz la automatización de validación del cumplimiento de requisitos de una población estudiantil para acceder a determinado beneficio. Por lo cual, haciendo uso de los reportes generados a través del sistema académico y con un modelado de datos hecho en Power BI se pudo generar una herramienta que permitía al área encargada de atención al usuario brindar un servicio con información inmediata. La información acá consignada es un demo y no corresponde a los datos reales.",
       github: "/projects",
-      url: "/projects",
-      image: ImageEjemplo1,
+      url: "https://app.powerbi.com/view?r=eyJrIjoiN2U3Y2VjNGItMDAzYi00Nzk0LWJhNjAtM2ZjODI0ZTNjMGY1IiwidCI6ImIxNTk2YThmLWMxNzYtNGNlZS1hN2ZhLTNjMTk1YjY0MTA1MSIsImMiOjR9",
+      image: BeneficiosIupbImg,
       year: "2024",
       type: "W",
     },
