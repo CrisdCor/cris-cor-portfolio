@@ -1,7 +1,9 @@
 import RickMortyApiImg from "../../assets/images/image-rick-&-morty-api.png";
 import PandaShootImg from "../../assets/images/image-panda-shoot.png";
+import PandaShoot2Img from "../../assets/images/image-panda-shooting-v2.png";
 import ReporteCierreIupbImg from "../../assets/images/image-cierre-iupb.png";
 import ImageEjemplo2 from "../../assets/images/ejemplo-1.jpg";
+
 import BeneficiosIupbImg from "../../assets/images/image-beneficios-iupb.png";
 import CardProject from "../../components/CardProject";
 import "./styles.css";
@@ -41,6 +43,15 @@ export default function Projects() {
       github: "/projects",
       url: "https://app.powerbi.com/view?r=eyJrIjoiN2U3Y2VjNGItMDAzYi00Nzk0LWJhNjAtM2ZjODI0ZTNjMGY1IiwidCI6ImIxNTk2YThmLWMxNzYtNGNlZS1hN2ZhLTNjMTk1YjY0MTA1MSIsImMiOjR9",
       image: BeneficiosIupbImg,
+      year: "2024",
+      type: "W",
+    },
+    {
+      name: "Caza Panda",
+      desc: "Este proyecto fue el escalamiento de un juego que se desarrolló a lo largo de un curso que buscaba mejorar las habilidades en animaciones con CSS. En este caso, se agregó interactividad al juego haciendo uso de React",
+      github: "https://github.com/CrisdCor/panda-shooting-v2",
+      url: "https://panda-shooting-v2.vercel.app/",
+      image: PandaShoot2Img,
       year: "2024",
       type: "W",
     },
