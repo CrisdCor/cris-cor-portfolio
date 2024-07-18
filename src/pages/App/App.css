@@ -12,7 +12,7 @@ estilo
   --white: #ffffff;
   --dark-blue: rgba(10, 11, 35, 1);
   --soft-blue: rgba(147, 170, 194, 1);
-  --cyan: rgb(0, 255, 233);
+  --cyan: rgba(0, 255, 233, 1);
 
   /*********************************************
   DEGRADADOS:
@@ -148,10 +148,11 @@ las páginas.
   position: relative;
   left: 50%;
   transform: translateX(-50%);
-  width: calc(100% - 1.6rem);
+  /* width: calc(100% - 1.6rem); */
+  width: 100%;
   max-width: 128rem;
-  padding: 12.4rem 0;
-  opacity: 0;
+  min-height: calc(100dvh - var(--space-s));
+  padding-top: 12.4rem;
   animation: animation-open-page 0.8s both;
 }
 

@@ -1,4 +1,3 @@
-import ImageBckgr from "../../assets/images/image-background-2.png";
 import "./styles.css";
 
 export default function AboutMe() {
@@ -54,10 +53,6 @@ export default function AboutMe() {
             </p>
           </div>
         </article>
-
-        <div className="about-me__image">
-          <img src={ImageBckgr} alt="foto"></img>
-        </div>
       </section>
     </main>
   );

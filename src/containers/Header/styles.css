@@ -8,7 +8,7 @@
   width: calc(100% - 1.6rem);
   max-width: 128rem;
   height: 6.2rem;
-  padding: var(--space-s);
+  padding: var(--space-s) var(--space-m);
   display: flex;
   justify-content: space-between;
   align-items: center;
