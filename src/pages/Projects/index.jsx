@@ -6,7 +6,7 @@ import ImageEjemplo2 from "../../assets/images/ejemplo-1.jpg";
 import BeneficiosIupbImg from "../../assets/images/image-beneficios-iupb.png";
 
 import CardProject from "../../components/CardProject";
-// import MyFooter from "../../components/MyFooter";
+import { CustomFooter } from "../../components/CustomFooter";
 
 import "./styles.css";
 
@@ -93,9 +93,8 @@ export default function Projects() {
             )}
           />
         </div>
-
-        {/* <MyFooter /> */}
       </section>
+      <CustomFooter />
     </main>
   );
 }

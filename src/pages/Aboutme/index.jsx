@@ -1,3 +1,5 @@
+import { CustomFooter } from "../../components/CustomFooter";
+
 import "./styles.css";
 
 export default function AboutMe() {
@@ -54,6 +56,7 @@ export default function AboutMe() {
           </div>
         </article>
       </section>
+      <CustomFooter />
     </main>
   );
 }

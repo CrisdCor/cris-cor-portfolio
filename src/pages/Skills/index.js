@@ -1,5 +1,7 @@
 import Studies from "../../components/Studies";
 import WorkHistory from "../../components/WorkHistory";
+import { CustomFooter } from "../../components/CustomFooter";
+
 import "./styles.css";
 
 export default function Skills() {
@@ -12,6 +14,7 @@ export default function Skills() {
           <WorkHistory />
         </div>
       </section>
+      <CustomFooter />
     </main>
   );
 }

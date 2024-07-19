@@ -1,8 +1,8 @@
-import SkillTools from "../../components/SkillTools";
+import SkillTools from "../SkillTools";
 
 import "./styles.css";
 
-export const MyFooter = () => {
+export const CustomFooter = () => {
   return (
     <footer className="footer-container">
       <SkillTools />
