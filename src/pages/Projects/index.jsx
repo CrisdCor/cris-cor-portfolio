@@ -3,9 +3,11 @@ import PandaShootImg from "../../assets/images/image-panda-shoot.png";
 import PandaShoot2Img from "../../assets/images/image-panda-shooting-v2.png";
 import ReporteCierreIupbImg from "../../assets/images/image-cierre-iupb.png";
 import ImageEjemplo2 from "../../assets/images/ejemplo-1.jpg";
-
 import BeneficiosIupbImg from "../../assets/images/image-beneficios-iupb.png";
+
 import CardProject from "../../components/CardProject";
+// import MyFooter from "../../components/MyFooter";
+
 import "./styles.css";
 
 export default function Projects() {
@@ -84,7 +86,6 @@ export default function Projects() {
           />
         </div>
         <span className="projects__division"></span>
-        <h2 className="projects__subtitle text-l">Proyectos académicos</h2>
         <div className="projects-grid-container">
           <CardProject
             listProjects={listProjects.filter(
@@ -92,6 +93,8 @@ export default function Projects() {
             )}
           />
         </div>
+
+        {/* <MyFooter /> */}
       </section>
     </main>
   );

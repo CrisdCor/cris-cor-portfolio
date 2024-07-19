@@ -1,9 +1,11 @@
+import SkillTools from "../../components/SkillTools";
+
 import "./styles.css";
 
 export const MyFooter = () => {
   return (
-    <footer>
-      <p>Acá está el footer</p>
+    <footer className="footer-container">
+      <SkillTools />
     </footer>
   );
 };

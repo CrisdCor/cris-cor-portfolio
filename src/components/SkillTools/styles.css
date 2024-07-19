@@ -6,34 +6,17 @@
   width: 100%;
   display: flex;
   flex-wrap: wrap;
-  gap: var(--space-m);
-}
-
-.tools__shadow {
-  position: absolute;
-  width: var(--space-xxl);
-  height: 100%;
-}
-
-.tools__shadow--left {
-  top: 0;
-  left: 0;
-}
-
-.tools__shadow--right {
-  top: 0;
-  right: 0;
+  gap: var(--space-s);
 }
 
 .tools__element {
-  /* max-width: 32rem; */
-  flex: 1 1 16rem;
-  padding: var(--space-m);
+  padding: var(--space-s);
   display: flex;
-  align-items: center;
+  flex: 1 1 16rem;
   gap: var(--space-s);
+  align-items: center;
   border: 0.1rem solid var(--white-border);
-  border-radius: var(--space-m);
+  border-radius: var(--space-s);
   user-select: none;
   transition: box-shadow 1s;
 }
@@ -44,7 +27,7 @@
 }
 
 .tools__element-icon {
-  height: 3.2rem;
+  height: 2.4rem;
 }
 
 .tools__element-text {

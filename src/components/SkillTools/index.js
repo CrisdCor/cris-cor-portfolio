@@ -42,8 +42,6 @@ export default function SkillTools() {
 
   return (
     <section className="skills-tools">
-      <div className="tools__shadow tools__shadow--left"></div>
-
       {skillsList.map((el, index) => (
         <div
           key={el.index}
@@ -52,10 +50,9 @@ export default function SkillTools() {
           }`}
         >
           <img className="tools__element-icon" src={el.icon} alt={el.name} />
-          <p className="tools__element-text text-l text-center">{el.name}</p>
+          <p className="tools__element-text text-m text-center">{el.name}</p>
         </div>
       ))}
-      <div className="tools__shadow tools__shadow--right"></div>
     </section>
   );
 }
