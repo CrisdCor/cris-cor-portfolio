@@ -57,13 +57,10 @@ export default function ContactModal({ toggleContact, openContact }) {
         <p className="contact-modal__text text-m text-center">
           ¡No dudes en escribir! A mi correo electrónico.
         </p>
-        {/* <p className="contact-modal__email text-m">
-          cristiandavid.corrales@gmail.com
-        </p> */}
         <div className="button-email-container">
           <button
             onClick={copyEmail}
-            className="button-email__button text-m text-center"
+            className="button-email__button text-center"
           >
             {buttonText}
           </button>

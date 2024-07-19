@@ -16,13 +16,12 @@
   padding: 0 var(--space-m);
   background: rgba(147, 170, 194, 0.4);
   border-radius: 0.4rem;
-  transition: all 0.8s;
   color: var(--cyan);
-  transition: all 0.5s;
+  transition: all 0.8s;
 }
 
 .button-contact--close {
-  transform: translateY(7.8rem);
+  transform: translateY(6.8rem);
 }
 
 /* ********************************************

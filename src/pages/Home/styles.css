@@ -22,19 +22,11 @@
 
 .home__text {
   grid-column: 2 / 4;
+  font-size: 2.4rem;
 }
 
 @media (max-width: 768px) {
-  .home-container__wrap-home {
-    height: 36rem;
-  }
-
-  .section--top p,
-  .section--bottom p {
-    font-size: 2.4rem;
-  }
-
-  .wrap-home__decorations {
-    display: none;
+  .home__text {
+    font-size: 1.6rem;
   }
 }

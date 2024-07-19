@@ -8,9 +8,9 @@ export default function Home() {
       <section className="home-page">
         <img src={nameHome} alt="Cristian Corrales" className="home__name" />
         <div className="home__middle-line"></div>
-        <section className="home__text text-l">
+        <section className="home__text text-right">
           <p>Marketing, Formulación de Proyectos &</p>
-          <p>Desarrollo</p>
+          <p>Desarrollo Web</p>
         </section>
       </section>
       <GridContainer />

@@ -164,3 +164,9 @@ las páginas.
     opacity: 1;
   }
 }
+
+@media (max-width: 768px) {
+  .page-container {
+    padding-bottom: 7.2rem;
+  }
+}
