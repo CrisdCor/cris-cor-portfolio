@@ -4,7 +4,7 @@ export default function AboutMe() {
   return (
     <main className="page-container">
       <section className="about-me-section text-m">
-        <h1 className="text-title text-center">PROYECTOS</h1>
+        <h1 className="text-title text-center">ACERCA DE MI</h1>
 
         <article className="about-me__article article-personal">
           <div className="article--mask">

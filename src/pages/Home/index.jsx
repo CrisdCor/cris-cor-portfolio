@@ -1,5 +1,8 @@
 import nameHome from "../../assets/names/name-home.svg";
+
 import { GridContainer } from "../../components/GridContainer";
+import { MyFooter } from "../../components/MyFooter";
+
 import "./styles.css";
 
 export default function Home() {
@@ -14,6 +17,7 @@ export default function Home() {
         </section>
       </section>
       <GridContainer />
+      <MyFooter />
     </main>
   );
 }
