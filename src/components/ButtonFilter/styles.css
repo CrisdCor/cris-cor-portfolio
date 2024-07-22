@@ -1,0 +1,20 @@
+.filter-toggle {
+  flex: 1 1 26rem;
+  padding: var(--space-m);
+  color: var(--soft-blue);
+  font-family: "Exo 2", sans-serif;
+  border: 0.1rem solid var(--white-border);
+  border-radius: var(--space-s);
+  transition: all 0.5s;
+}
+
+.filter-toggle:hover {
+  color: var(--cyan);
+  border: 0.1rem solid var(--cyan);
+  transition: all 0.3s;
+}
+
+.filter-toggle--active {
+  border: 0.1rem solid var(--cyan);
+  color: var(--cyan);
+}

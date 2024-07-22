@@ -5,15 +5,17 @@ import "./styles.css";
 export default function CardProject({ listProjects }) {
   return (
     <>
-      {listProjects.map((project, index) => (
+      {listProjects.map((project) => (
         <article key={listProjects.name} className="card-project">
           <div className="card-project--mask">
-            <picture className="card-project__image">
-              <img src={project.image} alt={project.name} />
-            </picture>
-            <div className="card-project__text">
-              <p className="text-l text-bold">{project.name}</p>
-              <p className="text-s">{project.desc}</p>
+            <div className="card-project__top">
+              <picture className="card-project__image">
+                <img src={project.image} alt={project.name} />
+              </picture>
+              <div className="card-project__text">
+                <p className="text-l text-bold">{project.name}</p>
+                <p className="text-s">{project.desc}</p>
+              </div>
             </div>
             <div className="card-project__footer">
               <p className="card-project__footer--year text-s text-center">

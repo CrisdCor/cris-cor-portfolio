@@ -1,7 +1,8 @@
 @import url(../../pages/App/App.css);
 
 .card-project {
-  max-width: 58rem;
+  max-width: 41rem;
+  min-height: 42rem;
   padding: 0.1rem;
   display: flex;
   align-items: center;
@@ -15,31 +16,30 @@
 }
 
 .card-project--mask {
-  /* max-width: 58rem; */
   width: 100%;
   height: 100%;
   padding: var(--space-m);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  gap: var(--space-l);
   background: linear-gradient(
     180deg,
     rgba(10, 11, 35, 1) 20%,
     rgba(147, 170, 194, 0.1) 90%
   );
   border-radius: var(--space-m);
-  transition: box-shadow 0.5s;
 }
 
-.card-project--mask:hover {
-  box-shadow: 0 0 0.8rem 0.2rem var(--hover-border);
-  transition: box-shadow 0.3s;
+.card-project__top {
+  margin-bottom: var(--space-l);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-l);
 }
 
 .card-project__image {
   width: 100%;
-  height: 16rem;
+  height: 18rem;
   border-radius: var(--space-s);
   overflow: hidden;
 }
@@ -47,6 +47,10 @@
 .card-project__image img {
   width: 100%;
   filter: saturate(150%) brightness(80%) contrast(120%);
+}
+
+.card-project__text :nth-child(1) {
+  margin-bottom: var(--space-m);
 }
 
 .card-project__footer {
@@ -62,6 +66,7 @@
 
 .card-project__footer--year {
   width: 100%;
+  color: var(--cyan);
 }
 
 .card-project__footer--links {
