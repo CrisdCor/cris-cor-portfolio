@@ -1,21 +1,23 @@
 import { useState } from "react";
 
 export const useFilters = () => {
-  // Listado tipo de Proyectos
+  const typeProjects = [
+    { name: "all", desc: "Todos los proyectos", active: true },
+    { name: "academic", desc: "Proyectos Académicos", active: true },
+    { name: "freelance", desc: "Proyectos Freelance", active: true },
+    { name: "collaboration", desc: "Colaboraciones", active: true },
+  ];
 
-  //   Manejador, estado de filtros
-
-  const [filter, setFilter] = useState("");
+  const [filter, setFilter] = useState("all");
 
   const handleButton = (name) => {
     setFilter(name);
-    // console.log(name);
   };
 
   return {
     // Properties
+    typeProjects,
     filter,
-
     // Methods
     handleButton,
   };

@@ -1,4 +1,5 @@
 .filter-toggle {
+  max-width: 32rem;
   flex: 1 1 26rem;
   padding: var(--space-m);
   color: var(--soft-blue);

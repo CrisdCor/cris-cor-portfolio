@@ -1,13 +1,18 @@
 import CardProject from "../../components/CardProject";
-import { CustomFooter } from "../../components/CustomFooter";
 import { ButtonFilters } from "../../components/ButtonFilter";
 
 import { useProjects } from "../../hooks/useProjects";
+import { useFilters } from "../../hooks/useFilters";
 
 import "./styles.css";
 
 export default function Projects() {
+  const { typeProjects, handleButton, filter } = useFilters();
   const { listProjects } = useProjects();
+
+  const filterProjects = listProjects.filter(
+    (project) => project.type === filter
+  );
 
   return (
     <main className="page-container">
@@ -17,17 +22,29 @@ export default function Projects() {
         <hr />
 
         <div className="projects__filter">
-          <ButtonFilters />
+          {typeProjects.map(
+            (el) =>
+              el.active && (
+                <ButtonFilters
+                  key={el.name}
+                  onClick={() => handleButton(el.name)}
+                  className={`filter-toggle text-regular text-m ${
+                    filter === el.name ? "filter-toggle--active" : ""
+                  }`}
+                  label={el.desc}
+                />
+              )
+          )}
         </div>
 
         <hr />
 
         <div className="projects-grid">
-          {/* <CardProject listProjects={listProjects} /> */}
-          <CardProject listProjects={listProjects} />
+          <CardProject
+            listProjects={filter === "all" ? listProjects : filterProjects}
+          />
         </div>
       </section>
-      <CustomFooter />
     </main>
   );
 }
